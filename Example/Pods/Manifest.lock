@@ -1,0 +1,23 @@
+PODS:
+  - TYModuleManager (0.0.20.2)
+  - TYModuleManagerExample (0.0.1):
+    - TYModuleManager
+
+DEPENDENCIES:
+  - TYModuleManagerExample (from `../`)
+
+SPEC REPOS:
+  https://github.com/TuyaInc/TYPublicSpecs.git:
+    - TYModuleManager
+
+EXTERNAL SOURCES:
+  TYModuleManagerExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TYModuleManager: 97fa5c7d22d9102caa0146696bc8f892968c45ae
+  TYModuleManagerExample: c30915e309f7cb9df9d192e2a37def07477c01bf
+
+PODFILE CHECKSUM: 44e76c2791946d53aed13f0f1793ee80d7d4c1fc
+
+COCOAPODS: 1.5.0

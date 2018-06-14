@@ -1,0 +1,33 @@
+{
+  "name": "TYModuleManagerExample",
+  "version": "0.0.1",
+  "summary": "涂鸦模板组件",
+  "homepage": "https://docs.tuya.com/cn/",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "isfang": "fangdong@tuyasmart.com"
+  },
+  "source": {
+    "git": "https://github.com/TuyaInc/TYModuleManagerExample.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TYModuleManagerExample/Classes/**/*",
+  "resources": [
+    "TYModuleManagerExample/Assets/*.{png,xib,plist,xcassets,bundle}"
+  ],
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "TYModuleManager": [
+
+    ]
+  }
+}

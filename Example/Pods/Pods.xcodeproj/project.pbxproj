@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8F5474C8C8E31A768B79100E48BFB4 /* Pods-TYModuleManagerExample_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B8DE0651987ADC91E094B2FDBF138 /* Pods-TYModuleManagerExample_Example-dummy.m */; };
+		11408DAFE5641FF7EE586540FD2A88D8 /* TYModuleManagerExampleImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA9659D5218FD43B44865E529D00118 /* TYModuleManagerExampleImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		715304E121398B87B9DBCA52E7C12506 /* TYModuleManagerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF3A07AA0657837452B0A73091C6004 /* TYModuleManagerExample-dummy.m */; };
+		7BCC534F8928E2021BBE43BB940E0081 /* TYModuleManagerExampleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F64809A1948E96CB8487C9979CF544 /* TYModuleManagerExampleImpl.m */; };
+		BA6E5402E5D9B4459511F8EAFE13457B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D0FF0D23F578F9E0354795210D3B4E65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		FFEA2CEEE42ADEAC44929E737428217C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8A4C1D9776D7563ACB0F76EA339CC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F42DBBDD0C75621B6DB0935C094707;
+			remoteInfo = TYModuleManagerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		129514981EFD8C50148D5A9C538006A6 /* Pods-TYModuleManagerExample_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYModuleManagerExample_Example-resources.sh"; sourceTree = "<group>"; };
+		14EB9412103D983CF1EDCEC58EAF86D9 /* TYModuleManagerExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYModuleManagerExample.xcconfig; sourceTree = "<group>"; };
+		195EDCCF1C2EDAA8693F3786225B959B /* TYModuleManagerExample-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYModuleManagerExample-prefix.pch"; sourceTree = "<group>"; };
+		3A27B5BDB0C6DAB823F7459B2C54A6EF /* Pods-TYModuleManagerExample_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYModuleManagerExample_Example.release.xcconfig"; sourceTree = "<group>"; };
+		43AE0AE2166D295108C00F3CEC43DD27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4BFFD94F8BB8313E2A63E8B20E303D64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		501DBF31B043EBA108C74FF9A4AE4A95 /* TYModuleManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TYModuleManager.framework; path = TYModuleManager/TYModuleManager.framework; sourceTree = "<group>"; };
+		7CB0F84127137ECA237D6CF204011437 /* Pods-TYModuleManagerExample_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYModuleManagerExample_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		84F64809A1948E96CB8487C9979CF544 /* TYModuleManagerExampleImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYModuleManagerExampleImpl.m; path = TYModuleManagerExample/Classes/TYModuleManagerExampleImpl/TYModuleManagerExampleImpl.m; sourceTree = "<group>"; };
+		8FA9659D5218FD43B44865E529D00118 /* TYModuleManagerExampleImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYModuleManagerExampleImpl.h; path = TYModuleManagerExample/Classes/TYModuleManagerExampleImpl/TYModuleManagerExampleImpl.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF3A07AA0657837452B0A73091C6004 /* TYModuleManagerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYModuleManagerExample-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C902ECA963A8480848A10202C40B5852 /* Pods-TYModuleManagerExample_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYModuleManagerExample_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3E439FB67EDCE80F93FD9045ADA984C /* libTYModuleManagerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTYModuleManagerExample.a; path = libTYModuleManagerExample.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE90599365F6E774F653129927CF46EB /* Pods-TYModuleManagerExample_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYModuleManagerExample_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8E60E06CADA74B245B6F7A89006E3E8 /* libPods-TYModuleManagerExample_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TYModuleManagerExample_Example.a"; path = "libPods-TYModuleManagerExample_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08B8DE0651987ADC91E094B2FDBF138 /* Pods-TYModuleManagerExample_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYModuleManagerExample_Example-dummy.m"; sourceTree = "<group>"; };
+		F0B3C28B78042030AEB94B83F7710904 /* TYModuleManagerExample.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TYModuleManagerExample.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2EEFBE265E215542AD76743003D34B2 /* Pods-TYModuleManagerExample_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYModuleManagerExample_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE6BC85E54E96DC5CE5BCB203F847E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E5402E5D9B4459511F8EAFE13457B /* Foundation.framework in Frameworks */,
+				D0FF0D23F578F9E0354795210D3B4E65 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E51F1D6B6347E601D86991D7228EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEA2CEEE42ADEAC44929E737428217C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F57C2D1432FF8F99DC88754B9DC1581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED8FB1F6A5B42C86CF208A565C84C74C /* TYModuleManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4C7B51445E3682FE1BC3B250CF655CD1 /* TYModuleManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				8FA9659D5218FD43B44865E529D00118 /* TYModuleManagerExampleImpl.h */,
+				84F64809A1948E96CB8487C9979CF544 /* TYModuleManagerExampleImpl.m */,
+				CE556D1999032897F991F87DDDCB9A43 /* Pod */,
+				79BF5E1AB756D1760E03831B9D80649F /* Support Files */,
+			);
+			name = TYModuleManagerExample;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		79BF5E1AB756D1760E03831B9D80649F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14EB9412103D983CF1EDCEC58EAF86D9 /* TYModuleManagerExample.xcconfig */,
+				9FF3A07AA0657837452B0A73091C6004 /* TYModuleManagerExample-dummy.m */,
+				195EDCCF1C2EDAA8693F3786225B959B /* TYModuleManagerExample-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TYModuleManagerExample";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F188B68BDDC28BFBB17D08F93B28EE30 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				1F57C2D1432FF8F99DC88754B9DC1581 /* Pods */,
+				887F814AD02F8267A2B167EFA7829496 /* Products */,
+				8BD5795B20EF4AF52481125F7A39BA5D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		887F814AD02F8267A2B167EFA7829496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E60E06CADA74B245B6F7A89006E3E8 /* libPods-TYModuleManagerExample_Example.a */,
+				D3E439FB67EDCE80F93FD9045ADA984C /* libTYModuleManagerExample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BD5795B20EF4AF52481125F7A39BA5D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B393132249B4FE5B95669C1711A35D8B /* Pods-TYModuleManagerExample_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B393132249B4FE5B95669C1711A35D8B /* Pods-TYModuleManagerExample_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C902ECA963A8480848A10202C40B5852 /* Pods-TYModuleManagerExample_Example-acknowledgements.markdown */,
+				DE90599365F6E774F653129927CF46EB /* Pods-TYModuleManagerExample_Example-acknowledgements.plist */,
+				F08B8DE0651987ADC91E094B2FDBF138 /* Pods-TYModuleManagerExample_Example-dummy.m */,
+				F2EEFBE265E215542AD76743003D34B2 /* Pods-TYModuleManagerExample_Example-frameworks.sh */,
+				129514981EFD8C50148D5A9C538006A6 /* Pods-TYModuleManagerExample_Example-resources.sh */,
+				7CB0F84127137ECA237D6CF204011437 /* Pods-TYModuleManagerExample_Example.debug.xcconfig */,
+				3A27B5BDB0C6DAB823F7459B2C54A6EF /* Pods-TYModuleManagerExample_Example.release.xcconfig */,
+			);
+			name = "Pods-TYModuleManagerExample_Example";
+			path = "Target Support Files/Pods-TYModuleManagerExample_Example";
+			sourceTree = "<group>";
+		};
+		CE556D1999032897F991F87DDDCB9A43 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4BFFD94F8BB8313E2A63E8B20E303D64 /* LICENSE */,
+				43AE0AE2166D295108C00F3CEC43DD27 /* README.md */,
+				F0B3C28B78042030AEB94B83F7710904 /* TYModuleManagerExample.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ED8FB1F6A5B42C86CF208A565C84C74C /* TYModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5472FB1963237860EA9692F35CA64 /* Frameworks */,
+			);
+			name = TYModuleManager;
+			path = TYModuleManager;
+			sourceTree = "<group>";
+		};
+		F188B68BDDC28BFBB17D08F93B28EE30 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C7B51445E3682FE1BC3B250CF655CD1 /* TYModuleManagerExample */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FBD5472FB1963237860EA9692F35CA64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				501DBF31B043EBA108C74FF9A4AE4A95 /* TYModuleManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F2ECECAEDFF1C5501C2D5D3DAC93B16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11408DAFE5641FF7EE586540FD2A88D8 /* TYModuleManagerExampleImpl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9F42DBBDD0C75621B6DB0935C094707 /* TYModuleManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED57D986657295BE1C362CDC863251A /* Build configuration list for PBXNativeTarget "TYModuleManagerExample" */;
+			buildPhases = (
+				A2E8405B5BD535EE4E59437FC5AAF204 /* Sources */,
+				2FE6BC85E54E96DC5CE5BCB203F847E8 /* Frameworks */,
+				0F2ECECAEDFF1C5501C2D5D3DAC93B16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYModuleManagerExample;
+			productName = TYModuleManagerExample;
+			productReference = D3E439FB67EDCE80F93FD9045ADA984C /* libTYModuleManagerExample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA2FDEFBA551796936DCEE89B5045674 /* Pods-TYModuleManagerExample_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3247121B70F9846DC83E14282CA14075 /* Build configuration list for PBXNativeTarget "Pods-TYModuleManagerExample_Example" */;
+			buildPhases = (
+				407A811E70E4DB9D7D466444B1585018 /* Sources */,
+				85E51F1D6B6347E601D86991D7228EB9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3BBA8AEE3C831F11EC8B797018F75A /* PBXTargetDependency */,
+			);
+			name = "Pods-TYModuleManagerExample_Example";
+			productName = "Pods-TYModuleManagerExample_Example";
+			productReference = E8E60E06CADA74B245B6F7A89006E3E8 /* libPods-TYModuleManagerExample_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 887F814AD02F8267A2B167EFA7829496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA2FDEFBA551796936DCEE89B5045674 /* Pods-TYModuleManagerExample_Example */,
+				E9F42DBBDD0C75621B6DB0935C094707 /* TYModuleManagerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		407A811E70E4DB9D7D466444B1585018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8F5474C8C8E31A768B79100E48BFB4 /* Pods-TYModuleManagerExample_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E8405B5BD535EE4E59437FC5AAF204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715304E121398B87B9DBCA52E7C12506 /* TYModuleManagerExample-dummy.m in Sources */,
+				7BCC534F8928E2021BBE43BB940E0081 /* TYModuleManagerExampleImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA3BBA8AEE3C831F11EC8B797018F75A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TYModuleManagerExample;
+			target = E9F42DBBDD0C75621B6DB0935C094707 /* TYModuleManagerExample */;
+			targetProxy = A8A4C1D9776D7563ACB0F76EA339CC51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A5728644045BBB6C53C699F061B2EA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EB9412103D983CF1EDCEC58EAF86D9 /* TYModuleManagerExample.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TYModuleManagerExample/TYModuleManagerExample-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYModuleManagerExample;
+				PRODUCT_NAME = TYModuleManagerExample;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51385A612E0B758207426D5505E4402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A27B5BDB0C6DAB823F7459B2C54A6EF /* Pods-TYModuleManagerExample_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF00344C7C6FEE3257D59AE39A05D277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB0F84127137ECA237D6CF204011437 /* Pods-TYModuleManagerExample_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1D46FB710B08E98C0773FD7DB7798C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EB9412103D983CF1EDCEC58EAF86D9 /* TYModuleManagerExample.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TYModuleManagerExample/TYModuleManagerExample-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYModuleManagerExample;
+				PRODUCT_NAME = TYModuleManagerExample;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3247121B70F9846DC83E14282CA14075 /* Build configuration list for PBXNativeTarget "Pods-TYModuleManagerExample_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF00344C7C6FEE3257D59AE39A05D277 /* Debug */,
+				D51385A612E0B758207426D5505E4402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED57D986657295BE1C362CDC863251A /* Build configuration list for PBXNativeTarget "TYModuleManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5728644045BBB6C53C699F061B2EA6F /* Debug */,
+				F1D46FB710B08E98C0773FD7DB7798C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
