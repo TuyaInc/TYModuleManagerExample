@@ -7,6 +7,10 @@
 
 #import "TYModuleManagerExampleImpl.h"
 
+#import "TYModuleTestTask1.h"
+#import "TYModuleTestTask2.h"
+
+//组件可以考虑给自己加一个编译头放一下
 #import <TYModuleManager/TYModulPublic.h>
 
 @interface TYModuleManagerExampleImpl()<TYModuleProtocol>
@@ -29,7 +33,7 @@
 }
 
 #pragma mark -
-#pragma mark - TYModuleAppDelegate
+#pragma mark - TYModuleLifeCycleProtocol
 //接收app的生命周期,每个模块可以自己处理
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     NSLog(@"log life cycle: %@", NSStringFromSelector(_cmd));
@@ -54,21 +58,14 @@
 
 #pragma mark -
 #pragma mark - TYModuleRouterProtocol
-NSString *const TYXXXModule_XXXXXXX =  @"schema1";
-NSString *const TYXXXModule_XXXXXXX2 = @"schema2";
-NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
-
+NSString *const TYXXXModule_HOSTTEST =  @"host-test";
 //NSString *const TYXXXModule_XXXXXXX2 = @"schema1/path1";
 //NSString *const TYXXXModule_XXXXXXX3 = @"schema1/path1/path2";
-
-
-//注册,该模块需要处理的URL,这个是默认用涂鸦内部的默认schema 实现的 在之后的版本注册会无效化,请使用下面的注册方法
+// ⚠️ 注册,该模块需要处理的URL,这个是默认用涂鸦内部的默认schema 实现的 在之后的版本注册会无效化,请使用下面的注册方法
+// ⚠️ 该方法注册的路由会默认使用 打包进涂鸦的路由
 - (NSArray *)registeUrlForModule {
-    
     return @[
-             TYXXXModule_XXXXXXX,
-             TYXXXModule_XXXXXXX2,
-             TYXXXModule_XXXXXXX3
+             TYXXXModule_HOSTTEST,
              ];
 }
 
@@ -78,7 +75,7 @@ NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
     return @{
              @"schema111":@[@"xxxxxxxxxxxxxxx"],
              @"schema222":@[
-                     @"schema1", @"schema2"
+                     @"host-test2", @"host-test3"
                      ],
              };
 }
@@ -88,13 +85,9 @@ NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
     
     //1.在此之前 会处理好 进来的URL的合法性校验
     //2.各组件可以自己处理一些help method 来优化 出现URL过多,代码多的问题
-    if ([host isEqualToString:TYXXXModule_XXXXXXX]) {
-        //xxx
+    if ([host isEqualToString:TYXXXModule_HOSTTEST]) {
+        //TODO your work
         
-        return YES;
-    }
-    else if ([host isEqualToString:TYXXXModule_XXXXXXX2]) {
-        //xxx
         return YES;
     }
     
@@ -104,6 +97,7 @@ NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
 #pragma mark -
 #pragma mark - TYModuleServiceProtocol
 
+// ⚠️⚠️⚠️⚠️ 这个方法是当前模块提供给外部进行通信的自定义协议 非涂鸦内部理论上不需要, 使用一段时间看是否有类似需求, 后续会考虑不开放该协议
 //- (NSArray<NSValue *> *)registereModuleServices {
 //
 //    return @[
@@ -113,14 +107,16 @@ NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
 
 #pragma mark -
 #pragma mark - TYModuleTabProtocol
+//注册当前模块被作为TAB 存在着提供的输出能力
+//如果希望你的模块成为一个tab 请注册以下方法
 - (TYModuleTabMapping)registereModuleTab {
-    bool showBadge = false;
-    bool selected = false;
+    bool showBadge = false;  //暂时可以忽略 直接false即可
+    bool selected = false;   //暂时可以忽略 直接false即可
     
-    NSString *viewController = @"viewController";
-    NSString *pageTitle = @"pageTitle";
-    NSString *normalImage = @"normalImage";
-    NSString *selectedImage = @"selectedImage";
+    NSString *viewController = @"ReplaceYourVCName";
+    NSString *pageTitle = @"ReplaceYourPageTitle";
+    NSString *normalImage = @"ReplaceYourNormalImage";
+    NSString *selectedImage = @"ReplaceYourSelectedImage";
     
     TYModuleTabMapping mapping = {
         showBadge,
@@ -136,12 +132,26 @@ NSString *const TYXXXModule_XXXXXXX3 = @"schema3";
 
 #pragma mark -
 #pragma mark - TYModuleTaskProtocol
-//- (NSArray<Class<TYTaskProtocol>> *)registeTasksForModule {
-//    //, [TYTask10 class], [TYTask11 class], [TYTask12 class]   这三个互相成环
-//    //, [TYTask13 class]  与自己成环
-//    return @[
-//             [TYTask1 class], [TYTask2 class], [TYTask7 class], [TYTask8 class]
-//             ];
-//}
+//注册需要执行的启动任务
+- (NSArray<Class<TYTaskProtocol>> *)registeTasksForModule {
+    return @[
+             [TYModuleTestTask1 class], [TYModuleTestTask2 class]
+             ];
+}
+
+#pragma mark -
+#pragma mark - TYModuleLoginLifeCycleProtocol
+
+
+//下面三个是 用户登录状态变化的回调 请根据需要使用
+- (void)userDidLoginSuccess {
+    //登录成功
+}
+- (void)userDidLogOut {
+    //用户登出
+}
+- (void)userDidForcedLogOut {
+    //用户被强制登出, session过期等..
+}
 
 @end
