@@ -13,6 +13,17 @@
 //组件可以考虑给自己加一个编译头放一下
 #import <TYModuleManager/TYModulPublic.h>
 
+
+//暂时 可使用不需额外申请的三方组件如下, 客户可以按需使用, 版本号需要跟我们的版本号保持一致
+//pod 'SDWebImage/Core','4.2.2'
+//pod 'MBProgressHUD', '0.9.2'
+//pod 'IQKeyboardManager', '6.0.3'
+//pod 'MJRefresh', '3.1.12'
+//pod 'SDVersion', '4.3.2'
+//pod 'Reachability', '3.2'
+//pod 'UICKeyChainStore', '2.1.1'
+//pod 'Masonry', '1.1.0'
+
 @interface TYModuleManagerExampleImpl()<TYModuleProtocol>
 
 @end
