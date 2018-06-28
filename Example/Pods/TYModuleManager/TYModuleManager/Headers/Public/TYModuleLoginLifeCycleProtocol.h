@@ -11,6 +11,7 @@
 
 @optional
 - (void)userDidLoginSuccess;
+- (void)userDidAutoLoginSuccess;
 - (void)userDidLogOut;
 - (void)userDidForcedLogOut;
 @end

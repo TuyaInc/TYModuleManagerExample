@@ -1,6 +1,6 @@
 PODS:
-  - TYModuleManager (0.0.20.2)
-  - TYModuleManagerExample (0.0.2):
+  - TYModuleManager (0.0.22.2)
+  - TYModuleManagerExample (0.0.4):
     - TYModuleManager
 
 DEPENDENCIES:
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TYModuleManager: 97fa5c7d22d9102caa0146696bc8f892968c45ae
-  TYModuleManagerExample: df7df03d5b9179a6602fcbb631582bc50fe2effd
+  TYModuleManager: 84baa1044fe7f3ba665ac420282c9d16f0bc825a
+  TYModuleManagerExample: 4144df5e1c5d05190af432f700b5b60f4e65d14e
 
 PODFILE CHECKSUM: 44e76c2791946d53aed13f0f1793ee80d7d4c1fc
 
