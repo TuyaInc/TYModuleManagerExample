@@ -13,6 +13,7 @@
 //组件可以考虑给自己加一个编译头放一下
 #import <TYModuleManager/TYModulPublic.h>
 //#import "TYModulPublic.h"
+#import "TYTestViewController.h"
 
 
 //暂时 可使用不需额外申请的三方组件如下, 客户可以按需使用, 版本号需要跟我们的版本号保持一致
@@ -164,6 +165,14 @@ NSString *const TYXXXModule_HOSTTEST =  @"host-test";
 }
 - (void)userDidForcedLogOut {
     //用户被强制登出, session过期等..
+}
+
+#pragma mark -
+#pragma mark - TYModuleMainLoginProtocol
+//登录模块返回一个需要被加载的登录的vc class
+- (Class)mainLoginViewController {
+    return [TYTestViewController class];
+//    return [YourLoginGuideClass class];
 }
 
 @end
