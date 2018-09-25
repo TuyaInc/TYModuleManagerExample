@@ -1,9 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/TYModuleManager" "${PODS_ROOT}/Headers/Public/TYModuleManagerExample" "${PODS_ROOT}/Headers/Public/TYModuleServices"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/TYModuleManagerExample" "${PODS_ROOT}/TYModuleManager/TYModuleManager"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/TYModuleManager" -isystem "${PODS_ROOT}/Headers/Public/TYModuleManagerExample" -isystem "${PODS_ROOT}/Headers/Public/TYModuleServices"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"TYModuleManager" -l"TYModuleManagerExample" -framework "Foundation" -framework "UIKit"
-PODS_BUILD_DIR = ${BUILD_DIR}
-PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
-PODS_ROOT = ${SRCROOT}/Pods
