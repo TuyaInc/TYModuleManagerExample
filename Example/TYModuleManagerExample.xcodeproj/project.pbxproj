@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370235F0215A14ED000B97C5 /* config_modules.json in Resources */ = {isa = PBXBuildFile; fileRef = 370235EF215A14ED000B97C5 /* config_modules.json */; };
+		370235F3215A1609000B97C5 /* TYExampleApplicationModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 370235F2215A1609000B97C5 /* TYExampleApplicationModuleImpl.m */; };
+		370235FD215A2210000B97C5 /* YourModuleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 370235FC215A2210000B97C5 /* YourModuleImpl.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* TYAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* TYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* TYViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -21,7 +23,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D757D81D987C3C6D138CED2A /* libPods-TYModuleManagerExample_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FC77A258C3BD20B62F6310 /* libPods-TYModuleManagerExample_Example.a */; };
 		F57D858D20B55B0B0094EEDE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D858C20B55B0B0094EEDE /* File.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370235EF215A14ED000B97C5 /* config_modules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config_modules.json; sourceTree = "<group>"; };
+		370235F1215A1609000B97C5 /* TYExampleApplicationModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYExampleApplicationModuleImpl.h; sourceTree = "<group>"; };
+		370235F2215A1609000B97C5 /* TYExampleApplicationModuleImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYExampleApplicationModuleImpl.m; sourceTree = "<group>"; };
+		370235FB215A2210000B97C5 /* YourModuleImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YourModuleImpl.h; sourceTree = "<group>"; };
+		370235FC215A2210000B97C5 /* YourModuleImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourModuleImpl.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TYModuleManagerExample_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYModuleManagerExample_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,8 +53,6 @@
 		6003F59B195388D20070C39A /* TYModuleManagerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYModuleManagerExample-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* TYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* TYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* TYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* TYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* TYModuleManagerExample_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYModuleManagerExample_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,7 +63,6 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77FC77A258C3BD20B62F6310 /* libPods-TYModuleManagerExample_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYModuleManagerExample_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		865593EBDD0D91F44F87DDF9 /* Pods-TYModuleManagerExample_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYModuleManagerExample_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYModuleManagerExample_Example/Pods-TYModuleManagerExample_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98AD2826AEBC2655FF5DAC16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E414F501BB33F307CBDE826E /* Pods-TYModuleManagerExample_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYModuleManagerExample_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYModuleManagerExample_Example/Pods-TYModuleManagerExample_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EFEBA9A32B83FCAAE136CFE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -102,6 +105,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		370235F5215A162B000B97C5 /* ApplicationModule */ = {
+			isa = PBXGroup;
+			children = (
+				370235F1215A1609000B97C5 /* TYExampleApplicationModuleImpl.h */,
+				370235F2215A1609000B97C5 /* TYExampleApplicationModuleImpl.m */,
+			);
+			path = ApplicationModule;
+			sourceTree = "<group>";
+		};
+		370235FA215A1EE7000B97C5 /* YourModule */ = {
+			isa = PBXGroup;
+			children = (
+				370235FB215A2210000B97C5 /* YourModuleImpl.h */,
+				370235FC215A2210000B97C5 /* YourModuleImpl.m */,
+			);
+			path = YourModule;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -140,11 +161,10 @@
 			children = (
 				6003F59C195388D20070C39A /* TYAppDelegate.h */,
 				6003F59D195388D20070C39A /* TYAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* TYViewController.h */,
-				6003F5A6195388D20070C39A /* TYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				370235F5215A162B000B97C5 /* ApplicationModule */,
+				370235FA215A1EE7000B97C5 /* YourModule */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				F57D858C20B55B0B0094EEDE /* File.swift */,
 				F57D858B20B55B0B0094EEDE /* TY_Example-Bridging-Header.h */,
@@ -156,6 +176,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				370235EF215A14ED000B97C5 /* config_modules.json */,
 				6003F595195388D20070C39A /* TYModuleManagerExample-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -204,6 +225,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				BE4712BA710F70060AC6AD8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,9 +262,10 @@
 			attributes = {
 				CLASSPREFIX = TY;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = isfang;
+				ORGANIZATIONNAME = Tuya;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
+						DevelopmentTeam = 94JFPTRDN5;
 						LastSwiftMigration = 0930;
 					};
 					6003F5AD195388D20070C39A = {
@@ -274,10 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				370235F0215A14ED000B97C5 /* config_modules.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +315,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BE4712BA710F70060AC6AD8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TYModuleManagerExample_Example/Pods-TYModuleManagerExample_Example-resources.sh",
+				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/tab_guide_icon@2x.png",
+				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/tab_guide_Icon@3x.png",
+				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/TYModuleManager_Guide.md",
+				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/TYServicesExample.storyboard",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tab_guide_icon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tab_guide_Icon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYModuleManager_Guide.md",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYServicesExample.storyboardc",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYModuleManagerExample_Example/Pods-TYModuleManagerExample_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BE97CB5C585C9E3EF8D1B9A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,8 +369,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TYAppDelegate.m in Sources */,
+				370235FD215A2210000B97C5 /* YourModuleImpl.m in Sources */,
 				F57D858D20B55B0B0094EEDE /* File.swift in Sources */,
-				6003F5A7195388D20070C39A /* TYViewController.m in Sources */,
+				370235F3215A1609000B97C5 /* TYExampleApplicationModuleImpl.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,13 +528,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 94JFPTRDN5;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TYModuleManagerExample/TYModuleManagerExample-Prefix.pch";
 				INFOPLIST_FILE = "TYModuleManagerExample/TYModuleManagerExample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuya.TYModuleManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TYModuleManagerExample/TY_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -497,13 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 94JFPTRDN5;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TYModuleManagerExample/TYModuleManagerExample-Prefix.pch";
 				INFOPLIST_FILE = "TYModuleManagerExample/TYModuleManagerExample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuya.TYModuleManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TYModuleManagerExample/TY_Example-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

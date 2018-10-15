@@ -10,9 +10,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'TYModuleManagerExample/Classes/**/*'
-  #s.resources = ['TYModuleManagerExample/Assets/*.{png,xib,plist,xcassets,bundle}']
+  s.resources = ['TYModuleManagerExample/Assets/*.{png,xib,storyboard,md,plist,xcassets,bundle}']
 
   s.frameworks = 'UIKit', 'Foundation'
+  
   s.dependency 'TYModuleManager'
+  s.dependency 'Masonry'
 
 end
