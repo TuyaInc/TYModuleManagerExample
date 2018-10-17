@@ -31,6 +31,8 @@
     return [[TYModuleManager sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
+#pragma mark - Forward
+
 - (BOOL)respondsToSelector:(SEL)aSelector {
     return [super respondsToSelector:aSelector] || [[TYModule applicationService] respondsToSelector:aSelector];
 }

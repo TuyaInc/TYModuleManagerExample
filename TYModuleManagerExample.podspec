@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.dependency 'TYModuleManager'
   s.dependency 'Masonry'
 
+  s.dependency 'TYUIKit'  # 涂鸦的UI组件
+
 end

@@ -123,6 +123,14 @@
 			path = YourModule;
 			sourceTree = "<group>";
 		};
+		37FBFDB62175CDF3004910C3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				370235EF215A14ED000B97C5 /* config_modules.json */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +173,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				370235F5215A162B000B97C5 /* ApplicationModule */,
 				370235FA215A1EE7000B97C5 /* YourModule */,
+				37FBFDB62175CDF3004910C3 /* Config */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				F57D858C20B55B0B0094EEDE /* File.swift */,
 				F57D858B20B55B0B0094EEDE /* TY_Example-Bridging-Header.h */,
@@ -176,7 +185,6 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				370235EF215A14ED000B97C5 /* config_modules.json */,
 				6003F595195388D20070C39A /* TYModuleManagerExample-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,

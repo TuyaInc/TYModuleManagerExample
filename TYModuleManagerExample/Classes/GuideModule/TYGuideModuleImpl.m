@@ -8,7 +8,8 @@
 #import "TYGuideModuleImpl.h"
 
 #import "TYGuideViewController.h"
-#import "TYNavigationController.h"
+
+#import "TPNavigationController.h"
 
 #import "TYModuleTabRegisterProtocol.h"
 #import "TYModuleRouteRegisterProtocol.h"
@@ -37,7 +38,7 @@
     // 为tabItem配置viewController，根据需求自己包装navi
     UIViewController *pageVC = [TYGuideViewController new];
     pageVC.title = @"涂鸦向导";
-    TYNavigationController *navi = [[TYNavigationController alloc] initWithRootViewController:pageVC];
+    TPNavigationController *navi = [[TPNavigationController alloc] initWithRootViewController:pageVC];
     tabAttr.viewController = navi;
 
     UIImage *normalImage = [[UIImage imageNamed:@"tab_guide_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
