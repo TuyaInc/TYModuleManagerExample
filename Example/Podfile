@@ -1,6 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/TuyaInc/TYPublicSpecs.git'
-#source 'https://registry.code.tuya-inc.top/tuyaIOS/TYSpecs.git'   # 私有库
 
 target 'TYModuleManagerExample_Example' do
   pod 'TYModuleManagerExample', :path => '../'
