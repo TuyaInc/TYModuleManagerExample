@@ -1,6 +1,6 @@
 {
-  "schema": "yourSchema",
-  "appDelegate": "TYExampleApplicationModuleImpl",
+  "scheme": "yourScheme",
+  "application": "TYExampleApplicationModuleImpl",
   "tabManager": "TYModuleTabManager",
   "tabs": [
       "YourModuleImpl",

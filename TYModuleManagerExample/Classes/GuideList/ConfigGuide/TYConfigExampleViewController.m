@@ -25,7 +25,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     _keyDataArr = @[
-                    @"schema",
+                    @"scheme",
                     @"buildModules",
                     @"applicationService",
                     @"tabManagerService",
