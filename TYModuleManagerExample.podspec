@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TYModuleManagerExample'
-  s.version          = '1.0.1'
-  s.summary          = '涂鸦模板组件'
+  s.version          = '1.0.2'
+  s.summary          = '涂鸦模板组件使用示例'
   s.homepage         = 'https://docs.tuya.com/cn/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tuya' => 'ios@tuya.com' }
@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation'
   
   s.dependency 'TYModuleManager'
-  s.dependency 'Masonry'
-
   s.dependency 'TYUIKit'  # 涂鸦的UI组件
+  
+  s.dependency 'Masonry'
 
 end
