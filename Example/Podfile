@@ -1,10 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/TuyaInc/TYPublicSpecs.git'
+#source 'https://code.registry.wgine.com/tuyaIOS/TYSpecs.git'   # 私有库
 
 target 'TYModuleManagerExample_Example' do
   pod 'TYModuleManagerExample', :path => '../'
   
 #  pod 'TYModuleManager', :path => '../../TYModuleManager'
 #  pod 'TYModuleTabbar', :path => '../../TYModuleTabbar'
+
 
 end

@@ -336,6 +336,7 @@
 				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/tab_guide_Icon@3x.png",
 				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/TYModuleManager_Guide.md",
 				"${PODS_ROOT}/../../TYModuleManagerExample/Assets/TYServicesExample.storyboard",
+				"${PODS_ROOT}/TYNavigationController/TYNavigationController/Assets/TYNavigationRes.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -345,6 +346,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tab_guide_Icon@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYModuleManager_Guide.md",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYServicesExample.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYNavigationRes.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

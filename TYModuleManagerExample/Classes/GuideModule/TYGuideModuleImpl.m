@@ -9,17 +9,15 @@
 
 #import "TYGuideViewController.h"
 
-#import "TPNavigationController.h"
+#import "TYNavigationController.h"
 
 #import "TYModuleTabRegisterProtocol.h"
 #import "TYModuleRouteRegisterProtocol.h"
 #import "TYModuleNotifyRegisterProtocol.h"
 
-#import "TYNotifyProtocol.h"
-
 #define UseCustomButton
 
-@interface TYGuideModuleImpl () <TYModuleTabRegisterProtocol, TYModuleRouteRegisterProtocol, TYModuleNotifyRegisterProtocol, TYNotifyProtocol>
+@interface TYGuideModuleImpl () <TYModuleTabRegisterProtocol, TYModuleRouteRegisterProtocol, TYModuleNotifyRegisterProtocol>
 
 @end
 
@@ -38,7 +36,7 @@
     // 为tabItem配置viewController，根据需求自己包装navi
     UIViewController *pageVC = [TYGuideViewController new];
     pageVC.title = @"涂鸦向导";
-    TPNavigationController *navi = [[TPNavigationController alloc] initWithRootViewController:pageVC];
+    TYNavigationController *navi = [[TYNavigationController alloc] initWithRootViewController:pageVC];
     tabAttr.viewController = navi;
 
     UIImage *normalImage = [[UIImage imageNamed:@"tab_guide_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
@@ -48,7 +46,7 @@
     // 完全自定义tabButton ↓↓↓↓↓↓
     
     // 创建一个button用于tabItemButton，此处使用UIButton，实际只要是UIControl或其子类就行
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    TYTabBarCustomButton *button = [[TYTabBarCustomButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
     button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     button.contentHorizontalAlignment= UIControlContentHorizontalAlignmentFill;
     button.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;

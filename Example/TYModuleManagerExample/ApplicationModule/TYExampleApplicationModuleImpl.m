@@ -9,10 +9,20 @@
 #import "TYExampleApplicationModuleImpl.h"
 
 #import "TYModuleManager.h"
+#import "TYNavigationController.h"
 
 @implementation TYExampleApplicationModuleImpl
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions config:(id<TYModuleConfigBlueprint>)config {
+- (UIWindow *)window {
+    if (![UIApplication sharedApplication].delegate.window) {
+        UIWindow *win = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        win.backgroundColor = [UIColor whiteColor];
+        [UIApplication sharedApplication].delegate.window = win;
+    }
+    return [UIApplication sharedApplication].delegate.window;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions {
 
     [self reloadRootViewController];
     
@@ -39,19 +49,22 @@
     [self resetRootViewController:rootVC];
 }
 
+- (void)resetRootViewController:(__kindof UIViewController *)rootVC {
+    
+    UIViewController *vc;
+    if ([rootVC isKindOfClass:[UITabBarController class]] || [rootVC isKindOfClass:[UINavigationController class]]) {
+        vc = rootVC;
+    } else {
+        TYNavigationController *navi = [[TYNavigationController alloc] initWithRootViewController:rootVC];
+        navi.navigationBarHidden = YES;
+        vc = navi;
+    }
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+}
+
+
 #pragma mark - <UIApplicationDelegate>
 
-#pragma mark - Push Notifications
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken NS_AVAILABLE_IOS(3_0) {
-    // TODO: resister push token success
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error NS_AVAILABLE_IOS(3_0) {
-    // TODO: resister push token failure
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
-    // TODO: do anything you want
-}
 
 @end

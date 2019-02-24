@@ -7,7 +7,7 @@
 
 #import "TYRouteExampleViewController.h"
 
-#import "TYModule.h"
+#import "TYModuleManager.h"
 
 @interface TYRouteExampleViewController ()
 

@@ -6,8 +6,10 @@
 //  Copyright © 2018 Tuya. All rights reserved.
 //
 
-#import "TYModuleApplication.h"
+#import <Foundation/Foundation.h>
 
-@interface TYExampleApplicationModuleImpl : TYModuleApplication
+#import "TYModuleManager.h"
+
+@interface TYExampleApplicationModuleImpl : NSObject<TYModuleApplicationBlueprint>
 
 @end

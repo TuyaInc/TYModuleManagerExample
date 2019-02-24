@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   
   s.dependency 'TYModuleManager'
   s.dependency 'TYUIKit'  # 涂鸦的UI组件
+  s.dependency 'TYTabBarController'
+  s.dependency 'TYNavigationController'
   
   s.dependency 'Masonry'
 

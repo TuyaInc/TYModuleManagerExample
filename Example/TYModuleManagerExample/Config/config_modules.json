@@ -1,7 +1,5 @@
 {
-  "scheme": "yourScheme",
   "application": "TYExampleApplicationModuleImpl",
-  "tabManager": "TYModuleTabManager",
   "tabs": [
       "YourModuleImpl",
       "TYGuideModuleImpl",

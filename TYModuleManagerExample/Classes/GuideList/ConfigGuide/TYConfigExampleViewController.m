@@ -7,7 +7,7 @@
 
 #import "TYConfigExampleViewController.h"
 
-#import "TYModule.h"
+#import "TYModuleManager.h"
 
 @interface TYConfigExampleViewController ()
 
@@ -25,10 +25,8 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     _keyDataArr = @[
-                    @"scheme",
                     @"buildModules",
                     @"applicationService",
-                    @"tabManagerService",
                     @"moduleOnTabBar",
                     @"tabSelectedModule",
                     ];
@@ -41,13 +39,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSString *key = _keyDataArr[section];
-    NSObject *configService = [TYModule configService];
-    id value = [configService valueForKey:key];
-    if ([value isKindOfClass:[NSArray class]]) {
-        NSArray *arr = value;
-        return arr.count + 1;
+    id<TYModuleConfigBlueprint> configService = [TYModule configService];
+    SEL sel = NSSelectorFromString(key);
+    if ([configService respondsToSelector:sel]) {
+        id value = [configService performSelector:sel];
+        if ([value isKindOfClass:[NSArray class]]) {
+            NSArray *arr = value;
+            return arr.count + 1;
+        } else {
+            return 2;
+        }
     } else {
-        return 2;
+        return 1;
     }
 }
 

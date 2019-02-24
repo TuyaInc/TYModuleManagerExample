@@ -10,6 +10,9 @@
 
 #import "TYModuleTabRegisterProtocol.h"
 
+#import "TYNavigationController.h"
+#import "UIViewController+TYNavigation.h"
+
 
 @interface YourModuleImpl () <TYModuleTabRegisterProtocol>
 
@@ -26,7 +29,7 @@
     // 为tabItem配置viewController，根据需求自己包装navi
     UIViewController *pageVC = [UIViewController new];
     pageVC.title = @"YourPage";
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:pageVC];
+    UINavigationController *navi = [[TYNavigationController alloc] initWithRootViewController:pageVC];
     tabAttr.viewController = navi;
     
     // 配置tabItem的icon，可以根据需求自行控制RenderingMode

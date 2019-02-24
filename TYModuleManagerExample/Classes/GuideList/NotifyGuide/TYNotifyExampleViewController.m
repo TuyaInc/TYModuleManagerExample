@@ -7,7 +7,7 @@
 
 #import "TYNotifyExampleViewController.h"
 
-#import "TYModule.h"
+#import "TYModuleManager.h"
 
 @interface TYNotifyExampleViewController ()
 

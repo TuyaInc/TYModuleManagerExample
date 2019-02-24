@@ -11,6 +11,12 @@
 
 static NSString * const kTYModuleExampleCellIdentifier = @"kTYModuleExampleCellIdentifier";
 
+static NSString *const kTYModuleExampleTypeConfig = @"Config信息";
+static NSString *const kTYModuleExampleTypeRoute = @"Route用法";
+static NSString *const kTYModuleExampleTypeTab = @"Tab用法";
+static NSString *const kTYModuleExampleTypeNotify = @"Notify用法";
+static NSString *const kTYModuleExampleTypeApplication = @"Application用法";
+
 @interface TYModuleExampleListViewController ()
 
 @property (nonatomic, strong) NSArray *data;
@@ -23,11 +29,11 @@ static NSString * const kTYModuleExampleCellIdentifier = @"kTYModuleExampleCellI
     [super viewDidLoad];
         
     self.data = @[
-                  @"config信息",
-                  @"Route用法",
-                  @"Tab用法",
-                  @"Notify用法",
-                  @"Application用法",
+                  kTYModuleExampleTypeConfig,
+                  kTYModuleExampleTypeRoute,
+                  kTYModuleExampleTypeTab,
+//                  kTYModuleExampleTypeNotify,
+                  kTYModuleExampleTypeApplication,
                   ];
     
     self.clearsSelectionOnViewWillAppear = YES;
@@ -54,22 +60,22 @@ static NSString * const kTYModuleExampleCellIdentifier = @"kTYModuleExampleCellI
 
 #pragma mark - <UITableViewDelegate>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {   // config
+    if (indexPath.row == [_data indexOfObject:kTYModuleExampleTypeConfig]) {   // config
         TYConfigExampleViewController *vc = [TYConfigExampleViewController new];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 1) { // route
+    } else if (indexPath.row == [_data indexOfObject:kTYModuleExampleTypeRoute]) { // route
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TYServicesExample" bundle:[NSBundle mainBundle]];
         UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"kRouteExample"];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 2) { // tab
+    } else if (indexPath.row == [_data indexOfObject:kTYModuleExampleTypeTab]) { // tab
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TYServicesExample" bundle:[NSBundle mainBundle]];
         UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"kTabExample"];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 3) { // notify
+    } else if (indexPath.row == [_data indexOfObject:kTYModuleExampleTypeNotify]) { // notify
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TYServicesExample" bundle:[NSBundle mainBundle]];
         UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"kNotifyExample"];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 4) { // application
+    } else if (indexPath.row == [_data indexOfObject:kTYModuleExampleTypeApplication]) { // application
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TYServicesExample" bundle:[NSBundle mainBundle]];
         UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"kApplicationExample"];
         [self.navigationController pushViewController:vc animated:YES];
