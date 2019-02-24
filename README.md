@@ -17,12 +17,13 @@ TYModuleManagerExample is available through [CocoaPods](https://cocoapods.org). 
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
 pod 'TYModuleManagerExample'
 ```
 
 ## Author
 
-isfang, fangdong@tuyasmart.com
+TuyaInc, https://www.tuya.com
 
 ## License
 
